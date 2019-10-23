@@ -29,12 +29,12 @@ public class PanelLogin extends javax.swing.JPanel {
 
         labelAccount = new javax.swing.JLabel();
         labelPassword = new javax.swing.JLabel();
-        tfieldAccount = new javax.swing.JTextField();
         tfieldPassword = new javax.swing.JPasswordField();
         cboxRemember = new javax.swing.JCheckBox();
         buttonLogin = new javax.swing.JButton();
         buttonCreate = new javax.swing.JButton();
         labelForgot = new javax.swing.JLabel();
+        tfieldAccount = new javax.swing.JComboBox<>();
 
         setPreferredSize(new java.awt.Dimension(1600, 900));
         setLayout(null);
@@ -42,18 +42,15 @@ public class PanelLogin extends javax.swing.JPanel {
         labelAccount.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         labelAccount.setText("Account");
         add(labelAccount);
-        labelAccount.setBounds(630, 350, 120, 20);
+        labelAccount.setBounds(630, 340, 120, 30);
 
         labelPassword.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         labelPassword.setText("Password");
         add(labelPassword);
-        labelPassword.setBounds(630, 390, 120, 20);
-
-        tfieldAccount.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
-        add(tfieldAccount);
-        tfieldAccount.setBounds(750, 340, 280, 31);
+        labelPassword.setBounds(630, 380, 120, 30);
 
         tfieldPassword.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
+        tfieldPassword.setPreferredSize(new java.awt.Dimension(280, 31));
         add(tfieldPassword);
         tfieldPassword.setBounds(750, 380, 280, 31);
 
@@ -64,19 +61,33 @@ public class PanelLogin extends javax.swing.JPanel {
 
         buttonLogin.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
         buttonLogin.setText("Login");
+        buttonLogin.setMaximumSize(new java.awt.Dimension(100, 40));
+        buttonLogin.setMinimumSize(new java.awt.Dimension(100, 40));
+        buttonLogin.setPreferredSize(new java.awt.Dimension(100, 40));
         add(buttonLogin);
-        buttonLogin.setBounds(730, 470, 70, 32);
+        buttonLogin.setBounds(690, 470, 100, 40);
 
         buttonCreate.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
         buttonCreate.setText("Create");
+        buttonCreate.setMaximumSize(new java.awt.Dimension(100, 40));
+        buttonCreate.setMinimumSize(new java.awt.Dimension(100, 40));
+        buttonCreate.setPreferredSize(new java.awt.Dimension(100, 40));
         add(buttonCreate);
-        buttonCreate.setBounds(810, 470, 72, 32);
+        buttonCreate.setBounds(810, 470, 100, 40);
 
         labelForgot.setFont(new java.awt.Font("Ubuntu", 0, 14)); // NOI18N
         labelForgot.setForeground(new java.awt.Color(34, 79, 190));
         labelForgot.setText("Forgot password?");
         add(labelForgot);
         labelForgot.setBounds(750, 520, 140, 17);
+
+        tfieldAccount.setEditable(true);
+        tfieldAccount.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
+        tfieldAccount.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        tfieldAccount.setMinimumSize(new java.awt.Dimension(280, 31));
+        tfieldAccount.setPreferredSize(new java.awt.Dimension(280, 31));
+        add(tfieldAccount);
+        tfieldAccount.setBounds(750, 340, 280, 31);
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -87,7 +98,7 @@ public class PanelLogin extends javax.swing.JPanel {
     private javax.swing.JLabel labelAccount;
     private javax.swing.JLabel labelForgot;
     private javax.swing.JLabel labelPassword;
-    private javax.swing.JTextField tfieldAccount;
+    private javax.swing.JComboBox<String> tfieldAccount;
     private javax.swing.JPasswordField tfieldPassword;
     // End of variables declaration//GEN-END:variables
 }

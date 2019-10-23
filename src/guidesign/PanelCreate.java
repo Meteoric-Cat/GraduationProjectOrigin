@@ -27,156 +27,166 @@ public class PanelCreate extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        tfieldAccount = new javax.swing.JTextField();
+        tfieldPassword = new javax.swing.JTextField();
+        labelFullname = new javax.swing.JLabel();
+        tfieldFullname = new javax.swing.JTextField();
+        labelAge = new javax.swing.JLabel();
+        tfieldAge = new javax.swing.JTextField();
+        labelPosition = new javax.swing.JLabel();
+        tfieldPosition = new javax.swing.JTextField();
+        labelContactNumber = new javax.swing.JLabel();
+        tfieldContactNumber = new javax.swing.JTextField();
+        labelAccount = new javax.swing.JLabel();
+        labelPassword = new javax.swing.JLabel();
+        labelConfirm = new javax.swing.JLabel();
+        tfieldConfirm = new javax.swing.JTextField();
+        cboxTerm = new javax.swing.JCheckBox();
+        buttonCreate = new javax.swing.JButton();
+        buttonCancel = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(1500, 900));
         setLayout(null);
 
-        jTextField1.setMaximumSize(new java.awt.Dimension(300, 50));
-        jTextField1.setMinimumSize(new java.awt.Dimension(300, 50));
-        jTextField1.setPreferredSize(new java.awt.Dimension(300, 50));
-        add(jTextField1);
-        jTextField1.setBounds(660, 450, 300, 50);
+        tfieldAccount.setMaximumSize(new java.awt.Dimension(300, 50));
+        tfieldAccount.setMinimumSize(new java.awt.Dimension(300, 50));
+        tfieldAccount.setPreferredSize(new java.awt.Dimension(300, 50));
+        add(tfieldAccount);
+        tfieldAccount.setBounds(660, 450, 300, 50);
 
-        jTextField2.setMaximumSize(new java.awt.Dimension(300, 50));
-        jTextField2.setMinimumSize(new java.awt.Dimension(300, 50));
-        jTextField2.setPreferredSize(new java.awt.Dimension(300, 50));
-        add(jTextField2);
-        jTextField2.setBounds(660, 520, 300, 50);
+        tfieldPassword.setMaximumSize(new java.awt.Dimension(300, 50));
+        tfieldPassword.setMinimumSize(new java.awt.Dimension(300, 50));
+        tfieldPassword.setPreferredSize(new java.awt.Dimension(300, 50));
+        add(tfieldPassword);
+        tfieldPassword.setBounds(660, 520, 300, 50);
 
-        jLabel3.setText("Full Name");
-        jLabel3.setMaximumSize(new java.awt.Dimension(120, 50));
-        jLabel3.setMinimumSize(new java.awt.Dimension(120, 50));
-        jLabel3.setPreferredSize(new java.awt.Dimension(120, 50));
-        add(jLabel3);
-        jLabel3.setBounds(540, 130, 120, 50);
+        labelFullname.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        labelFullname.setText("Full Name");
+        labelFullname.setMaximumSize(new java.awt.Dimension(120, 50));
+        labelFullname.setMinimumSize(new java.awt.Dimension(120, 50));
+        labelFullname.setPreferredSize(new java.awt.Dimension(120, 50));
+        add(labelFullname);
+        labelFullname.setBounds(540, 120, 120, 50);
 
-        jTextField3.setMaximumSize(new java.awt.Dimension(300, 50));
-        jTextField3.setMinimumSize(new java.awt.Dimension(300, 50));
-        jTextField3.setPreferredSize(new java.awt.Dimension(300, 50));
-        jTextField3.setRequestFocusEnabled(false);
-        add(jTextField3);
-        jTextField3.setBounds(660, 120, 300, 50);
+        tfieldFullname.setMaximumSize(new java.awt.Dimension(300, 50));
+        tfieldFullname.setMinimumSize(new java.awt.Dimension(300, 50));
+        tfieldFullname.setPreferredSize(new java.awt.Dimension(300, 50));
+        tfieldFullname.setRequestFocusEnabled(false);
+        add(tfieldFullname);
+        tfieldFullname.setBounds(660, 120, 300, 50);
 
-        jLabel4.setText("Age");
-        jLabel4.setMaximumSize(new java.awt.Dimension(120, 50));
-        jLabel4.setMinimumSize(new java.awt.Dimension(120, 50));
-        jLabel4.setPreferredSize(new java.awt.Dimension(120, 50));
-        add(jLabel4);
-        jLabel4.setBounds(540, 200, 120, 50);
+        labelAge.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        labelAge.setText("Age");
+        labelAge.setMaximumSize(new java.awt.Dimension(120, 50));
+        labelAge.setMinimumSize(new java.awt.Dimension(120, 50));
+        labelAge.setPreferredSize(new java.awt.Dimension(120, 50));
+        add(labelAge);
+        labelAge.setBounds(540, 190, 120, 50);
 
-        jTextField4.setMaximumSize(new java.awt.Dimension(300, 50));
-        jTextField4.setMinimumSize(new java.awt.Dimension(300, 50));
-        jTextField4.setPreferredSize(new java.awt.Dimension(300, 50));
-        add(jTextField4);
-        jTextField4.setBounds(660, 190, 300, 50);
+        tfieldAge.setMaximumSize(new java.awt.Dimension(300, 50));
+        tfieldAge.setMinimumSize(new java.awt.Dimension(300, 50));
+        tfieldAge.setPreferredSize(new java.awt.Dimension(300, 50));
+        add(tfieldAge);
+        tfieldAge.setBounds(660, 190, 300, 50);
 
-        jLabel5.setText("Position");
-        jLabel5.setMaximumSize(new java.awt.Dimension(120, 50));
-        jLabel5.setMinimumSize(new java.awt.Dimension(120, 50));
-        jLabel5.setPreferredSize(new java.awt.Dimension(120, 50));
-        add(jLabel5);
-        jLabel5.setBounds(540, 260, 120, 50);
+        labelPosition.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        labelPosition.setText("Position");
+        labelPosition.setMaximumSize(new java.awt.Dimension(120, 50));
+        labelPosition.setMinimumSize(new java.awt.Dimension(120, 50));
+        labelPosition.setPreferredSize(new java.awt.Dimension(120, 50));
+        add(labelPosition);
+        labelPosition.setBounds(540, 260, 120, 50);
 
-        jTextField5.setMaximumSize(new java.awt.Dimension(300, 50));
-        jTextField5.setMinimumSize(new java.awt.Dimension(300, 50));
-        jTextField5.setPreferredSize(new java.awt.Dimension(300, 50));
-        add(jTextField5);
-        jTextField5.setBounds(660, 260, 300, 50);
+        tfieldPosition.setMaximumSize(new java.awt.Dimension(300, 50));
+        tfieldPosition.setMinimumSize(new java.awt.Dimension(300, 50));
+        tfieldPosition.setPreferredSize(new java.awt.Dimension(300, 50));
+        add(tfieldPosition);
+        tfieldPosition.setBounds(660, 260, 300, 50);
 
-        jLabel6.setText("Contact Number");
-        jLabel6.setMaximumSize(new java.awt.Dimension(120, 50));
-        jLabel6.setMinimumSize(new java.awt.Dimension(120, 50));
-        jLabel6.setPreferredSize(new java.awt.Dimension(120, 50));
-        add(jLabel6);
-        jLabel6.setBounds(540, 330, 120, 50);
+        labelContactNumber.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        labelContactNumber.setText("Contact Number");
+        labelContactNumber.setMaximumSize(new java.awt.Dimension(120, 50));
+        labelContactNumber.setMinimumSize(new java.awt.Dimension(120, 50));
+        labelContactNumber.setPreferredSize(new java.awt.Dimension(120, 50));
+        add(labelContactNumber);
+        labelContactNumber.setBounds(540, 330, 120, 50);
 
-        jTextField6.setMaximumSize(new java.awt.Dimension(300, 50));
-        jTextField6.setMinimumSize(new java.awt.Dimension(300, 50));
-        jTextField6.setPreferredSize(new java.awt.Dimension(300, 50));
-        add(jTextField6);
-        jTextField6.setBounds(660, 330, 300, 50);
+        tfieldContactNumber.setMaximumSize(new java.awt.Dimension(300, 50));
+        tfieldContactNumber.setMinimumSize(new java.awt.Dimension(300, 50));
+        tfieldContactNumber.setPreferredSize(new java.awt.Dimension(300, 50));
+        add(tfieldContactNumber);
+        tfieldContactNumber.setBounds(660, 330, 300, 50);
 
-        jLabel1.setText("Account");
-        jLabel1.setMaximumSize(new java.awt.Dimension(120, 50));
-        jLabel1.setMinimumSize(new java.awt.Dimension(120, 50));
-        jLabel1.setPreferredSize(new java.awt.Dimension(120, 50));
-        add(jLabel1);
-        jLabel1.setBounds(540, 450, 120, 50);
+        labelAccount.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        labelAccount.setText("Account");
+        labelAccount.setMaximumSize(new java.awt.Dimension(120, 50));
+        labelAccount.setMinimumSize(new java.awt.Dimension(120, 50));
+        labelAccount.setPreferredSize(new java.awt.Dimension(120, 50));
+        add(labelAccount);
+        labelAccount.setBounds(540, 450, 120, 50);
 
-        jLabel7.setText("Password");
-        jLabel7.setMaximumSize(new java.awt.Dimension(120, 50));
-        jLabel7.setMinimumSize(new java.awt.Dimension(120, 50));
-        jLabel7.setPreferredSize(new java.awt.Dimension(120, 50));
-        add(jLabel7);
-        jLabel7.setBounds(540, 520, 120, 50);
+        labelPassword.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        labelPassword.setText("Password");
+        labelPassword.setMaximumSize(new java.awt.Dimension(120, 50));
+        labelPassword.setMinimumSize(new java.awt.Dimension(120, 50));
+        labelPassword.setPreferredSize(new java.awt.Dimension(120, 50));
+        add(labelPassword);
+        labelPassword.setBounds(540, 520, 120, 50);
 
-        jLabel8.setText("Confirm");
-        jLabel8.setMaximumSize(new java.awt.Dimension(120, 50));
-        jLabel8.setMinimumSize(new java.awt.Dimension(120, 50));
-        jLabel8.setPreferredSize(new java.awt.Dimension(120, 50));
-        add(jLabel8);
-        jLabel8.setBounds(540, 590, 120, 50);
+        labelConfirm.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        labelConfirm.setText("Confirm");
+        labelConfirm.setMaximumSize(new java.awt.Dimension(120, 50));
+        labelConfirm.setMinimumSize(new java.awt.Dimension(120, 50));
+        labelConfirm.setPreferredSize(new java.awt.Dimension(120, 50));
+        add(labelConfirm);
+        labelConfirm.setBounds(540, 590, 120, 50);
 
-        jTextField7.setMaximumSize(new java.awt.Dimension(300, 50));
-        jTextField7.setMinimumSize(new java.awt.Dimension(300, 50));
-        jTextField7.setPreferredSize(new java.awt.Dimension(300, 50));
-        add(jTextField7);
-        jTextField7.setBounds(660, 590, 300, 50);
+        tfieldConfirm.setMaximumSize(new java.awt.Dimension(300, 50));
+        tfieldConfirm.setMinimumSize(new java.awt.Dimension(300, 50));
+        tfieldConfirm.setPreferredSize(new java.awt.Dimension(300, 50));
+        add(tfieldConfirm);
+        tfieldConfirm.setBounds(660, 590, 300, 50);
 
-        jCheckBox1.setText("I have read and agree to the term of service");
-        add(jCheckBox1);
-        jCheckBox1.setBounds(570, 670, 350, 24);
+        cboxTerm.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        cboxTerm.setText("I have read and agree to the term of service");
+        add(cboxTerm);
+        cboxTerm.setBounds(570, 670, 350, 24);
 
-        jButton1.setText("Create");
-        jButton1.setMaximumSize(new java.awt.Dimension(100, 50));
-        jButton1.setMinimumSize(new java.awt.Dimension(100, 50));
-        jButton1.setPreferredSize(new java.awt.Dimension(100, 50));
-        add(jButton1);
-        jButton1.setBounds(750, 710, 100, 50);
+        buttonCreate.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        buttonCreate.setText("Create");
+        buttonCreate.setMaximumSize(new java.awt.Dimension(100, 50));
+        buttonCreate.setMinimumSize(new java.awt.Dimension(100, 50));
+        buttonCreate.setPreferredSize(new java.awt.Dimension(100, 50));
+        add(buttonCreate);
+        buttonCreate.setBounds(750, 710, 100, 50);
 
-        jButton2.setText("Cancel");
-        jButton2.setMaximumSize(new java.awt.Dimension(100, 50));
-        jButton2.setMinimumSize(new java.awt.Dimension(100, 50));
-        jButton2.setPreferredSize(new java.awt.Dimension(100, 50));
-        add(jButton2);
-        jButton2.setBounds(860, 710, 100, 50);
+        buttonCancel.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        buttonCancel.setText("Cancel");
+        buttonCancel.setMaximumSize(new java.awt.Dimension(100, 50));
+        buttonCancel.setMinimumSize(new java.awt.Dimension(100, 50));
+        buttonCancel.setPreferredSize(new java.awt.Dimension(100, 50));
+        add(buttonCancel);
+        buttonCancel.setBounds(860, 710, 100, 50);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
+    private javax.swing.JButton buttonCancel;
+    private javax.swing.JButton buttonCreate;
+    private javax.swing.JCheckBox cboxTerm;
+    private javax.swing.JLabel labelAccount;
+    private javax.swing.JLabel labelAge;
+    private javax.swing.JLabel labelConfirm;
+    private javax.swing.JLabel labelContactNumber;
+    private javax.swing.JLabel labelFullname;
+    private javax.swing.JLabel labelPassword;
+    private javax.swing.JLabel labelPosition;
+    private javax.swing.JTextField tfieldAccount;
+    private javax.swing.JTextField tfieldAge;
+    private javax.swing.JTextField tfieldConfirm;
+    private javax.swing.JTextField tfieldContactNumber;
+    private javax.swing.JTextField tfieldFullname;
+    private javax.swing.JTextField tfieldPassword;
+    private javax.swing.JTextField tfieldPosition;
     // End of variables declaration//GEN-END:variables
 }
