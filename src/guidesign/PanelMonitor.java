@@ -39,8 +39,8 @@ public class PanelMonitor extends javax.swing.JPanel {
         tableItemValues = new javax.swing.JTable();
         buttonStart = new javax.swing.JButton();
         buttonStop = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        buttonNextTable = new javax.swing.JButton();
+        buttonPreviousTable = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(1500, 900));
         setLayout(null);
@@ -116,27 +116,29 @@ public class PanelMonitor extends javax.swing.JPanel {
         add(buttonStop);
         buttonStop.setBounds(940, 55, 60, 30);
 
-        jButton1.setText("Previous");
-        jButton1.setMaximumSize(new java.awt.Dimension(75, 25));
-        jButton1.setMinimumSize(new java.awt.Dimension(75, 25));
-        jButton1.setPreferredSize(new java.awt.Dimension(75, 25));
-        add(jButton1);
-        jButton1.setBounds(1250, 850, 73, 23);
+        buttonNextTable.setFont(new java.awt.Font("SansSerif", 0, 10)); // NOI18N
+        buttonNextTable.setText("Previous");
+        buttonNextTable.setMaximumSize(new java.awt.Dimension(75, 25));
+        buttonNextTable.setMinimumSize(new java.awt.Dimension(75, 25));
+        buttonNextTable.setPreferredSize(new java.awt.Dimension(75, 25));
+        add(buttonNextTable);
+        buttonNextTable.setBounds(1250, 850, 73, 23);
 
-        jButton2.setText("Next");
-        jButton2.setMaximumSize(new java.awt.Dimension(75, 25));
-        jButton2.setMinimumSize(new java.awt.Dimension(75, 25));
-        jButton2.setPreferredSize(new java.awt.Dimension(75, 25));
-        add(jButton2);
-        jButton2.setBounds(1340, 850, 73, 23);
+        buttonPreviousTable.setFont(new java.awt.Font("SansSerif", 0, 10)); // NOI18N
+        buttonPreviousTable.setText("Next");
+        buttonPreviousTable.setMaximumSize(new java.awt.Dimension(75, 25));
+        buttonPreviousTable.setMinimumSize(new java.awt.Dimension(75, 25));
+        buttonPreviousTable.setPreferredSize(new java.awt.Dimension(75, 25));
+        add(buttonPreviousTable);
+        buttonPreviousTable.setBounds(1340, 850, 73, 23);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton buttonNextTable;
+    private javax.swing.JButton buttonPreviousTable;
     private javax.swing.JButton buttonStart;
     private javax.swing.JButton buttonStop;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel labelDevice;
     private javax.swing.JLabel labelDeviceValue;
     private javax.swing.JLabel labelIPAddress;
