@@ -39,6 +39,8 @@ public class PanelMonitor extends javax.swing.JPanel {
         tableItemValues = new javax.swing.JTable();
         buttonStart = new javax.swing.JButton();
         buttonStop = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(1500, 900));
         setLayout(null);
@@ -113,12 +115,28 @@ public class PanelMonitor extends javax.swing.JPanel {
         buttonStop.setPreferredSize(new java.awt.Dimension(60, 30));
         add(buttonStop);
         buttonStop.setBounds(940, 55, 60, 30);
+
+        jButton1.setText("Previous");
+        jButton1.setMaximumSize(new java.awt.Dimension(75, 25));
+        jButton1.setMinimumSize(new java.awt.Dimension(75, 25));
+        jButton1.setPreferredSize(new java.awt.Dimension(75, 25));
+        add(jButton1);
+        jButton1.setBounds(1250, 850, 73, 23);
+
+        jButton2.setText("Next");
+        jButton2.setMaximumSize(new java.awt.Dimension(75, 25));
+        jButton2.setMinimumSize(new java.awt.Dimension(75, 25));
+        jButton2.setPreferredSize(new java.awt.Dimension(75, 25));
+        add(jButton2);
+        jButton2.setBounds(1340, 850, 73, 23);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonStart;
     private javax.swing.JButton buttonStop;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel labelDevice;
     private javax.swing.JLabel labelDeviceValue;
     private javax.swing.JLabel labelIPAddress;
