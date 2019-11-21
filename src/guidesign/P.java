@@ -34,21 +34,22 @@ public class P extends javax.swing.JFrame {
         labelPosition = new javax.swing.JLabel();
         labelContactNumber = new javax.swing.JLabel();
         labelAccountValue = new javax.swing.JLabel();
-        labelNewPassword = new javax.swing.JLabel();
         tfieldFullname = new javax.swing.JTextField();
         tfieldAge = new javax.swing.JTextField();
         tfieldPosition = new javax.swing.JTextField();
         tfieldContactNumber = new javax.swing.JTextField();
-        tfieldNewPassword = new javax.swing.JPasswordField();
-        buttonCancelPassword = new javax.swing.JButton();
         buttonSaveInfo = new javax.swing.JButton();
         buttonCancelInfo = new javax.swing.JButton();
         buttonChangePassword = new javax.swing.JButton();
         panelImage = new javax.swing.JPanel();
         labelImage = new javax.swing.JLabel();
+        labelPasswordValue = new javax.swing.JLabel();
+        panelChangePassword = new javax.swing.JPanel();
+        labelNewPassword = new javax.swing.JLabel();
         labelConfirm = new javax.swing.JLabel();
         tfieldConfirm = new javax.swing.JPasswordField();
-        labelPasswordValue = new javax.swing.JLabel();
+        tfieldNewPassword = new javax.swing.JPasswordField();
+        buttonCancelPassword = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1500, 900));
@@ -112,14 +113,6 @@ public class P extends javax.swing.JFrame {
         getContentPane().add(labelAccountValue);
         labelAccountValue.setBounds(470, 570, 200, 30);
 
-        labelNewPassword.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        labelNewPassword.setText("New password:");
-        labelNewPassword.setMaximumSize(new java.awt.Dimension(100, 30));
-        labelNewPassword.setMinimumSize(new java.awt.Dimension(100, 30));
-        labelNewPassword.setPreferredSize(new java.awt.Dimension(140, 30));
-        getContentPane().add(labelNewPassword);
-        labelNewPassword.setBounds(320, 660, 140, 30);
-
         tfieldFullname.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         tfieldFullname.setMaximumSize(new java.awt.Dimension(200, 30));
         tfieldFullname.setMinimumSize(new java.awt.Dimension(200, 30));
@@ -147,21 +140,6 @@ public class P extends javax.swing.JFrame {
         tfieldContactNumber.setPreferredSize(new java.awt.Dimension(200, 30));
         getContentPane().add(tfieldContactNumber);
         tfieldContactNumber.setBounds(1030, 310, 200, 30);
-
-        tfieldNewPassword.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        tfieldNewPassword.setMaximumSize(new java.awt.Dimension(200, 30));
-        tfieldNewPassword.setMinimumSize(new java.awt.Dimension(200, 30));
-        tfieldNewPassword.setPreferredSize(new java.awt.Dimension(200, 30));
-        getContentPane().add(tfieldNewPassword);
-        tfieldNewPassword.setBounds(470, 660, 200, 30);
-
-        buttonCancelPassword.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        buttonCancelPassword.setText("Cancel");
-        buttonCancelPassword.setMaximumSize(new java.awt.Dimension(80, 30));
-        buttonCancelPassword.setMinimumSize(new java.awt.Dimension(80, 30));
-        buttonCancelPassword.setPreferredSize(new java.awt.Dimension(80, 30));
-        getContentPane().add(buttonCancelPassword);
-        buttonCancelPassword.setBounds(690, 660, 80, 30);
 
         buttonSaveInfo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         buttonSaveInfo.setText("Save");
@@ -202,20 +180,6 @@ public class P extends javax.swing.JFrame {
         getContentPane().add(panelImage);
         panelImage.setBounds(400, 130, 290, 350);
 
-        labelConfirm.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        labelConfirm.setText("Confirm:");
-        labelConfirm.setMaximumSize(new java.awt.Dimension(100, 30));
-        labelConfirm.setMinimumSize(new java.awt.Dimension(100, 30));
-        labelConfirm.setPreferredSize(new java.awt.Dimension(100, 30));
-        getContentPane().add(labelConfirm);
-        labelConfirm.setBounds(320, 710, 100, 30);
-
-        tfieldConfirm.setMaximumSize(new java.awt.Dimension(200, 30));
-        tfieldConfirm.setMinimumSize(new java.awt.Dimension(200, 30));
-        tfieldConfirm.setPreferredSize(new java.awt.Dimension(200, 30));
-        getContentPane().add(tfieldConfirm);
-        tfieldConfirm.setBounds(470, 710, 200, 30);
-
         labelPasswordValue.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         labelPasswordValue.setText(". . .");
         labelPasswordValue.setMaximumSize(new java.awt.Dimension(200, 30));
@@ -223,6 +187,51 @@ public class P extends javax.swing.JFrame {
         labelPasswordValue.setPreferredSize(new java.awt.Dimension(200, 30));
         getContentPane().add(labelPasswordValue);
         labelPasswordValue.setBounds(470, 610, 200, 30);
+
+        panelChangePassword.setMaximumSize(new java.awt.Dimension(470, 120));
+        panelChangePassword.setMinimumSize(new java.awt.Dimension(470, 120));
+        panelChangePassword.setPreferredSize(new java.awt.Dimension(470, 120));
+        panelChangePassword.setLayout(null);
+
+        labelNewPassword.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        labelNewPassword.setText("New password:");
+        labelNewPassword.setMaximumSize(new java.awt.Dimension(100, 30));
+        labelNewPassword.setMinimumSize(new java.awt.Dimension(100, 30));
+        labelNewPassword.setPreferredSize(new java.awt.Dimension(140, 30));
+        panelChangePassword.add(labelNewPassword);
+        labelNewPassword.setBounds(10, 10, 140, 30);
+
+        labelConfirm.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        labelConfirm.setText("Confirm:");
+        labelConfirm.setMaximumSize(new java.awt.Dimension(100, 30));
+        labelConfirm.setMinimumSize(new java.awt.Dimension(100, 30));
+        labelConfirm.setPreferredSize(new java.awt.Dimension(100, 30));
+        panelChangePassword.add(labelConfirm);
+        labelConfirm.setBounds(10, 60, 100, 30);
+
+        tfieldConfirm.setMaximumSize(new java.awt.Dimension(200, 30));
+        tfieldConfirm.setMinimumSize(new java.awt.Dimension(200, 30));
+        tfieldConfirm.setPreferredSize(new java.awt.Dimension(200, 30));
+        panelChangePassword.add(tfieldConfirm);
+        tfieldConfirm.setBounds(160, 60, 200, 30);
+
+        tfieldNewPassword.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        tfieldNewPassword.setMaximumSize(new java.awt.Dimension(200, 30));
+        tfieldNewPassword.setMinimumSize(new java.awt.Dimension(200, 30));
+        tfieldNewPassword.setPreferredSize(new java.awt.Dimension(200, 30));
+        panelChangePassword.add(tfieldNewPassword);
+        tfieldNewPassword.setBounds(160, 10, 200, 30);
+
+        buttonCancelPassword.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        buttonCancelPassword.setText("Cancel");
+        buttonCancelPassword.setMaximumSize(new java.awt.Dimension(80, 30));
+        buttonCancelPassword.setMinimumSize(new java.awt.Dimension(80, 30));
+        buttonCancelPassword.setPreferredSize(new java.awt.Dimension(80, 30));
+        panelChangePassword.add(buttonCancelPassword);
+        buttonCancelPassword.setBounds(380, 10, 80, 30);
+
+        getContentPane().add(panelChangePassword);
+        panelChangePassword.setBounds(310, 650, 470, 120);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -282,6 +291,7 @@ public class P extends javax.swing.JFrame {
     private javax.swing.JLabel labelPassword;
     private javax.swing.JLabel labelPasswordValue;
     private javax.swing.JLabel labelPosition;
+    private javax.swing.JPanel panelChangePassword;
     private javax.swing.JPanel panelImage;
     private javax.swing.JTextField tfieldAge;
     private javax.swing.JPasswordField tfieldConfirm;
