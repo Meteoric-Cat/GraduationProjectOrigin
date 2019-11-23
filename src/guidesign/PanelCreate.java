@@ -45,6 +45,8 @@ public class PanelCreate extends javax.swing.JPanel {
         buttonCreate = new javax.swing.JButton();
         buttonCancel = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(236, 193, 151));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         setPreferredSize(new java.awt.Dimension(1500, 900));
         setLayout(null);
 
@@ -141,8 +143,11 @@ public class PanelCreate extends javax.swing.JPanel {
         add(labelConfirm);
         labelConfirm.setBounds(540, 590, 120, 50);
 
+        tfieldConfirm.setBackground(new java.awt.Color(255, 255, 255));
+        tfieldConfirm.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
         tfieldConfirm.setMaximumSize(new java.awt.Dimension(300, 50));
         tfieldConfirm.setMinimumSize(new java.awt.Dimension(300, 50));
+        tfieldConfirm.setOpaque(false);
         tfieldConfirm.setPreferredSize(new java.awt.Dimension(300, 50));
         add(tfieldConfirm);
         tfieldConfirm.setBounds(660, 590, 300, 50);
@@ -154,6 +159,7 @@ public class PanelCreate extends javax.swing.JPanel {
 
         buttonCreate.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         buttonCreate.setText("Create");
+        buttonCreate.setBorder(null);
         buttonCreate.setMaximumSize(new java.awt.Dimension(100, 50));
         buttonCreate.setMinimumSize(new java.awt.Dimension(100, 50));
         buttonCreate.setPreferredSize(new java.awt.Dimension(100, 50));
@@ -162,6 +168,7 @@ public class PanelCreate extends javax.swing.JPanel {
 
         buttonCancel.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         buttonCancel.setText("Cancel");
+        buttonCancel.setBorder(null);
         buttonCancel.setMaximumSize(new java.awt.Dimension(100, 50));
         buttonCancel.setMinimumSize(new java.awt.Dimension(100, 50));
         buttonCancel.setPreferredSize(new java.awt.Dimension(100, 50));

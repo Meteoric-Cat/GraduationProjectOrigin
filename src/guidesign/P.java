@@ -52,97 +52,94 @@ public class P extends javax.swing.JFrame {
         buttonCancelPassword = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(242, 185, 128));
         setMaximumSize(new java.awt.Dimension(1500, 900));
         setMinimumSize(new java.awt.Dimension(1500, 900));
         setPreferredSize(new java.awt.Dimension(1500, 900));
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         labelAccount.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         labelAccount.setText("Account:");
         labelAccount.setMaximumSize(new java.awt.Dimension(100, 30));
         labelAccount.setMinimumSize(new java.awt.Dimension(100, 30));
         labelAccount.setPreferredSize(new java.awt.Dimension(100, 30));
-        getContentPane().add(labelAccount);
-        labelAccount.setBounds(320, 570, 100, 30);
+        getContentPane().add(labelAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 570, -1, -1));
 
         labelPassword.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         labelPassword.setText("Password:");
         labelPassword.setMaximumSize(new java.awt.Dimension(100, 30));
         labelPassword.setMinimumSize(new java.awt.Dimension(100, 30));
         labelPassword.setPreferredSize(new java.awt.Dimension(100, 30));
-        getContentPane().add(labelPassword);
-        labelPassword.setBounds(320, 610, 100, 30);
+        getContentPane().add(labelPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 610, -1, -1));
 
         labelFullname.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         labelFullname.setText("Full name:");
         labelFullname.setMaximumSize(new java.awt.Dimension(150, 30));
         labelFullname.setMinimumSize(new java.awt.Dimension(150, 30));
         labelFullname.setPreferredSize(new java.awt.Dimension(150, 30));
-        getContentPane().add(labelFullname);
-        labelFullname.setBounds(880, 190, 150, 30);
+        getContentPane().add(labelFullname, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 190, -1, -1));
 
         labelAge.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         labelAge.setText("Age:");
         labelAge.setMaximumSize(new java.awt.Dimension(150, 30));
         labelAge.setMinimumSize(new java.awt.Dimension(150, 30));
         labelAge.setPreferredSize(new java.awt.Dimension(150, 30));
-        getContentPane().add(labelAge);
-        labelAge.setBounds(880, 230, 150, 30);
+        getContentPane().add(labelAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 230, -1, -1));
 
         labelPosition.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         labelPosition.setText("Position:");
         labelPosition.setMaximumSize(new java.awt.Dimension(150, 30));
         labelPosition.setMinimumSize(new java.awt.Dimension(150, 30));
         labelPosition.setPreferredSize(new java.awt.Dimension(150, 30));
-        getContentPane().add(labelPosition);
-        labelPosition.setBounds(880, 270, 150, 30);
+        getContentPane().add(labelPosition, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 270, -1, -1));
 
         labelContactNumber.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         labelContactNumber.setText("Contact number:");
         labelContactNumber.setMaximumSize(new java.awt.Dimension(150, 30));
         labelContactNumber.setMinimumSize(new java.awt.Dimension(150, 30));
         labelContactNumber.setPreferredSize(new java.awt.Dimension(150, 30));
-        getContentPane().add(labelContactNumber);
-        labelContactNumber.setBounds(880, 310, 150, 30);
+        getContentPane().add(labelContactNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 310, -1, -1));
 
         labelAccountValue.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         labelAccountValue.setText(". . .");
         labelAccountValue.setMaximumSize(new java.awt.Dimension(200, 30));
         labelAccountValue.setMinimumSize(new java.awt.Dimension(200, 30));
         labelAccountValue.setPreferredSize(new java.awt.Dimension(200, 30));
-        getContentPane().add(labelAccountValue);
-        labelAccountValue.setBounds(470, 570, 200, 30);
+        getContentPane().add(labelAccountValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 570, -1, -1));
 
         tfieldFullname.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         tfieldFullname.setMaximumSize(new java.awt.Dimension(200, 30));
         tfieldFullname.setMinimumSize(new java.awt.Dimension(200, 30));
         tfieldFullname.setPreferredSize(new java.awt.Dimension(200, 30));
-        getContentPane().add(tfieldFullname);
-        tfieldFullname.setBounds(1030, 190, 200, 30);
+        getContentPane().add(tfieldFullname, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 190, -1, -1));
 
         tfieldAge.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         tfieldAge.setMaximumSize(new java.awt.Dimension(200, 30));
         tfieldAge.setMinimumSize(new java.awt.Dimension(200, 30));
         tfieldAge.setPreferredSize(new java.awt.Dimension(200, 30));
-        getContentPane().add(tfieldAge);
-        tfieldAge.setBounds(1030, 230, 200, 30);
+        getContentPane().add(tfieldAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 230, -1, -1));
 
         tfieldPosition.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         tfieldPosition.setMaximumSize(new java.awt.Dimension(200, 30));
         tfieldPosition.setMinimumSize(new java.awt.Dimension(200, 30));
         tfieldPosition.setPreferredSize(new java.awt.Dimension(200, 30));
-        getContentPane().add(tfieldPosition);
-        tfieldPosition.setBounds(1030, 270, 200, 30);
+        getContentPane().add(tfieldPosition, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 270, -1, -1));
 
+        tfieldContactNumber.setBackground(new java.awt.Color(150, 6, 6));
         tfieldContactNumber.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        tfieldContactNumber.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
+        tfieldContactNumber.setCaretColor(new java.awt.Color(247, 89, 89));
         tfieldContactNumber.setMaximumSize(new java.awt.Dimension(200, 30));
         tfieldContactNumber.setMinimumSize(new java.awt.Dimension(200, 30));
         tfieldContactNumber.setPreferredSize(new java.awt.Dimension(200, 30));
-        getContentPane().add(tfieldContactNumber);
-        tfieldContactNumber.setBounds(1030, 310, 200, 30);
+        getContentPane().add(tfieldContactNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 310, -1, -1));
 
+        buttonSaveInfo.setBackground(new java.awt.Color(236, 236, 57));
         buttonSaveInfo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         buttonSaveInfo.setText("Save");
+        buttonSaveInfo.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        buttonSaveInfo.setBorderPainted(false);
+        buttonSaveInfo.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
         buttonSaveInfo.setMaximumSize(new java.awt.Dimension(80, 30));
         buttonSaveInfo.setMinimumSize(new java.awt.Dimension(80, 30));
         buttonSaveInfo.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -151,42 +148,38 @@ public class P extends javax.swing.JFrame {
                 buttonSaveInfoActionPerformed(evt);
             }
         });
-        getContentPane().add(buttonSaveInfo);
-        buttonSaveInfo.setBounds(1050, 370, 80, 30);
+        getContentPane().add(buttonSaveInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 370, -1, -1));
 
         buttonCancelInfo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         buttonCancelInfo.setText("Cancel");
+        buttonCancelInfo.setBorderPainted(false);
         buttonCancelInfo.setMaximumSize(new java.awt.Dimension(80, 30));
         buttonCancelInfo.setMinimumSize(new java.awt.Dimension(80, 30));
         buttonCancelInfo.setPreferredSize(new java.awt.Dimension(80, 30));
-        getContentPane().add(buttonCancelInfo);
-        buttonCancelInfo.setBounds(1140, 370, 80, 30);
+        getContentPane().add(buttonCancelInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 370, -1, -1));
 
         buttonChangePassword.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         buttonChangePassword.setText("Change");
         buttonChangePassword.setMaximumSize(new java.awt.Dimension(80, 30));
         buttonChangePassword.setMinimumSize(new java.awt.Dimension(80, 30));
         buttonChangePassword.setPreferredSize(new java.awt.Dimension(80, 30));
-        getContentPane().add(buttonChangePassword);
-        buttonChangePassword.setBounds(690, 610, 80, 30);
+        getContentPane().add(buttonChangePassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 610, -1, -1));
 
-        panelImage.setLayout(null);
+        panelImage.setLayout(new java.awt.CardLayout());
 
         labelImage.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        labelImage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelImage.setText("Image");
-        panelImage.add(labelImage);
-        labelImage.setBounds(110, 120, 80, 40);
+        panelImage.add(labelImage, "card2");
 
-        getContentPane().add(panelImage);
-        panelImage.setBounds(400, 130, 290, 350);
+        getContentPane().add(panelImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 290, 350));
 
         labelPasswordValue.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         labelPasswordValue.setText(". . .");
         labelPasswordValue.setMaximumSize(new java.awt.Dimension(200, 30));
         labelPasswordValue.setMinimumSize(new java.awt.Dimension(200, 30));
         labelPasswordValue.setPreferredSize(new java.awt.Dimension(200, 30));
-        getContentPane().add(labelPasswordValue);
-        labelPasswordValue.setBounds(470, 610, 200, 30);
+        getContentPane().add(labelPasswordValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 610, -1, -1));
 
         panelChangePassword.setMaximumSize(new java.awt.Dimension(470, 120));
         panelChangePassword.setMinimumSize(new java.awt.Dimension(470, 120));
@@ -230,8 +223,7 @@ public class P extends javax.swing.JFrame {
         panelChangePassword.add(buttonCancelPassword);
         buttonCancelPassword.setBounds(380, 10, 80, 30);
 
-        getContentPane().add(panelChangePassword);
-        panelChangePassword.setBounds(310, 650, 470, 120);
+        getContentPane().add(panelChangePassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 650, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -251,7 +243,7 @@ public class P extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Metal".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
