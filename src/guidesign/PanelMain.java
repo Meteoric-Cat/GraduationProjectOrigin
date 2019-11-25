@@ -9,7 +9,7 @@ package guidesign;
  *
  * @author cloud
  */
-public class PanelMain extends javax.swing.JPanel {
+public class PanelMain extends javax.swing.JFrame {
 
     /**
      * Creates new form PanelMain
@@ -27,62 +27,237 @@ public class PanelMain extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panelOptions = new javax.swing.JPanel();
-        labelDevices = new javax.swing.JLabel();
-        labelTemplates = new javax.swing.JLabel();
-        labelUser = new javax.swing.JLabel();
-        labelSettings = new javax.swing.JLabel();
+        panelDeviceMenu = new javax.swing.JPanel();
+        labelImportedDevices = new javax.swing.JLabel();
+        labelScannedDevices = new javax.swing.JLabel();
+        separator1 = new javax.swing.JSeparator();
+        panelTemplateMenu = new javax.swing.JPanel();
+        labelTabularTemplates = new javax.swing.JLabel();
+        labelSingularTemplates = new javax.swing.JLabel();
+        separator2 = new javax.swing.JSeparator();
+        panelAccountMenu = new javax.swing.JPanel();
+        labelProfile = new javax.swing.JLabel();
+        labelLogout = new javax.swing.JLabel();
+        separator3 = new javax.swing.JSeparator();
+        panelMain = new javax.swing.JPanel();
+        panelOptionsBar = new javax.swing.JPanel();
+        panelOptionTraps = new javax.swing.JPanel();
+        label5 = new javax.swing.JLabel();
+        label6 = new javax.swing.JLabel();
+        panelOptionDevices = new javax.swing.JPanel();
+        label1 = new javax.swing.JLabel();
+        label2 = new javax.swing.JLabel();
+        panelOptionTemplates = new javax.swing.JPanel();
+        label3 = new javax.swing.JLabel();
+        label4 = new javax.swing.JLabel();
+        labelIconAccount = new javax.swing.JLabel();
+        labelIconSettings = new javax.swing.JLabel();
 
-        setPreferredSize(new java.awt.Dimension(1600, 900));
-        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
+        panelDeviceMenu.setBackground(new java.awt.Color(39, 87, 159));
+        panelDeviceMenu.setBorder(null);
+        panelDeviceMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelOptions.setMaximumSize(new java.awt.Dimension(100, 900));
-        panelOptions.setMinimumSize(new java.awt.Dimension(100, 900));
-        panelOptions.setPreferredSize(new java.awt.Dimension(100, 900));
-        panelOptions.setLayout(null);
+        labelImportedDevices.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        labelImportedDevices.setForeground(java.awt.Color.white);
+        labelImportedDevices.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelImportedDevices.setText("Imported Devices");
+        labelImportedDevices.setBorder(null);
+        panelDeviceMenu.add(labelImportedDevices, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 198, 49));
 
-        labelDevices.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelDevices.setText("Devices");
-        labelDevices.setMaximumSize(new java.awt.Dimension(100, 100));
-        labelDevices.setMinimumSize(new java.awt.Dimension(100, 100));
-        labelDevices.setPreferredSize(new java.awt.Dimension(100, 100));
-        panelOptions.add(labelDevices);
-        labelDevices.setBounds(0, 0, 100, 100);
+        labelScannedDevices.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        labelScannedDevices.setForeground(java.awt.Color.white);
+        labelScannedDevices.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelScannedDevices.setText("Scanned Devices");
+        labelScannedDevices.setBorder(null);
+        panelDeviceMenu.add(labelScannedDevices, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 198, 44));
+        panelDeviceMenu.add(separator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 200, 10));
 
-        labelTemplates.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelTemplates.setText("Templates");
-        labelTemplates.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        labelTemplates.setMaximumSize(new java.awt.Dimension(100, 100));
-        labelTemplates.setMinimumSize(new java.awt.Dimension(100, 100));
-        labelTemplates.setPreferredSize(new java.awt.Dimension(100, 100));
-        panelOptions.add(labelTemplates);
-        labelTemplates.setBounds(0, 100, 100, 100);
+        panelTemplateMenu.setBackground(new java.awt.Color(39, 87, 159));
+        panelTemplateMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        labelUser.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelUser.setText("User");
-        labelUser.setMaximumSize(new java.awt.Dimension(100, 100));
-        labelUser.setMinimumSize(new java.awt.Dimension(100, 100));
-        labelUser.setPreferredSize(new java.awt.Dimension(100, 100));
-        panelOptions.add(labelUser);
-        labelUser.setBounds(0, 690, 100, 100);
+        labelTabularTemplates.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        labelTabularTemplates.setForeground(java.awt.Color.white);
+        labelTabularTemplates.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelTabularTemplates.setText("Tabular Templates");
+        labelTabularTemplates.setBorder(null);
+        panelTemplateMenu.add(labelTabularTemplates, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 198, 44));
 
-        labelSettings.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelSettings.setText("Settings");
-        labelSettings.setMaximumSize(new java.awt.Dimension(100, 100));
-        labelSettings.setMinimumSize(new java.awt.Dimension(100, 100));
-        labelSettings.setPreferredSize(new java.awt.Dimension(100, 100));
-        panelOptions.add(labelSettings);
-        labelSettings.setBounds(0, 800, 100, 100);
+        labelSingularTemplates.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        labelSingularTemplates.setForeground(java.awt.Color.white);
+        labelSingularTemplates.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelSingularTemplates.setText("Singular Templates");
+        labelSingularTemplates.setBorder(null);
+        panelTemplateMenu.add(labelSingularTemplates, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 198, 49));
+        panelTemplateMenu.add(separator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 200, 10));
 
-        add(panelOptions);
+        panelAccountMenu.setBackground(new java.awt.Color(39, 87, 159));
+        panelAccountMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        labelProfile.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        labelProfile.setForeground(java.awt.Color.white);
+        labelProfile.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelProfile.setText("Logout");
+        labelProfile.setBorder(null);
+        panelAccountMenu.add(labelProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 198, 44));
+
+        labelLogout.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        labelLogout.setForeground(java.awt.Color.white);
+        labelLogout.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelLogout.setText("Profile");
+        labelLogout.setBorder(null);
+        panelAccountMenu.add(labelLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 198, 49));
+        panelAccountMenu.add(separator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 200, 10));
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        panelMain.setBackground(java.awt.Color.white);
+        panelMain.setPreferredSize(new java.awt.Dimension(1600, 1000));
+        panelMain.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        panelOptionsBar.setBackground(new java.awt.Color(20, 62, 125));
+        panelOptionsBar.setForeground(new java.awt.Color(34, 52, 143));
+        panelOptionsBar.setPreferredSize(new java.awt.Dimension(1600, 60));
+        panelOptionsBar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        panelOptionTraps.setBackground(java.awt.Color.red);
+        panelOptionTraps.setOpaque(false);
+        panelOptionTraps.setPreferredSize(new java.awt.Dimension(200, 60));
+        panelOptionTraps.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        label5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        label5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_traps_40.png"))); // NOI18N
+        label5.setFocusable(false);
+        panelOptionTraps.add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 60));
+
+        label6.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        label6.setForeground(java.awt.Color.white);
+        label6.setText("Traps");
+        label6.setFocusable(false);
+        panelOptionTraps.add(label6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 130, 60));
+
+        panelOptionsBar.add(panelOptionTraps, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 0, -1, -1));
+
+        panelOptionDevices.setBackground(java.awt.Color.red);
+        panelOptionDevices.setFocusable(false);
+        panelOptionDevices.setOpaque(false);
+        panelOptionDevices.setPreferredSize(new java.awt.Dimension(200, 60));
+        panelOptionDevices.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        label1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        label1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_network_40.png"))); // NOI18N
+        label1.setFocusable(false);
+        panelOptionDevices.add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 60));
+
+        label2.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        label2.setForeground(java.awt.Color.white);
+        label2.setText("Devices");
+        label2.setFocusable(false);
+        panelOptionDevices.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 130, 60));
+
+        panelOptionsBar.add(panelOptionDevices, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        panelOptionTemplates.setBackground(java.awt.Color.red);
+        panelOptionTemplates.setOpaque(false);
+        panelOptionTemplates.setPreferredSize(new java.awt.Dimension(200, 60));
+        panelOptionTemplates.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        label3.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        label3.setForeground(java.awt.Color.white);
+        label3.setText("Templates");
+        label3.setFocusable(false);
+        panelOptionTemplates.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 130, 60));
+
+        label4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        label4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_template2_40.png"))); // NOI18N
+        label4.setFocusable(false);
+        panelOptionTemplates.add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 60));
+
+        panelOptionsBar.add(panelOptionTemplates, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, -1, -1));
+
+        labelIconAccount.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelIconAccount.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_account_40.png"))); // NOI18N
+        panelOptionsBar.add(labelIconAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(1540, 0, 60, 60));
+
+        labelIconSettings.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelIconSettings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_settings_40.png"))); // NOI18N
+        labelIconSettings.setToolTipText("");
+        panelOptionsBar.add(labelIconSettings, new org.netbeans.lib.awtextra.AbsoluteConstraints(1480, 0, 60, 60));
+
+        panelMain.add(panelOptionsBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        getContentPane().add(panelMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(PanelMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(PanelMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(PanelMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(PanelMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new PanelMain().setVisible(true);
+            }
+        });
+    }
+
+    public void rememberPositioning() {
+        panelMain.add(panelDeviceMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 200, 110));
+        panelMain.add(panelTemplateMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, 200, 110));
+        panelMain.add(panelAccountMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(1400, 60, 200, 110));
+
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel labelDevices;
-    private javax.swing.JLabel labelSettings;
-    private javax.swing.JLabel labelTemplates;
-    private javax.swing.JLabel labelUser;
-    private javax.swing.JPanel panelOptions;
+    private javax.swing.JLabel label1;
+    private javax.swing.JLabel label2;
+    private javax.swing.JLabel label3;
+    private javax.swing.JLabel label4;
+    private javax.swing.JLabel label5;
+    private javax.swing.JLabel label6;
+    private javax.swing.JLabel labelIconAccount;
+    private javax.swing.JLabel labelIconSettings;
+    private javax.swing.JLabel labelImportedDevices;
+    private javax.swing.JLabel labelLogout;
+    private javax.swing.JLabel labelProfile;
+    private javax.swing.JLabel labelScannedDevices;
+    private javax.swing.JLabel labelSingularTemplates;
+    private javax.swing.JLabel labelTabularTemplates;
+    private javax.swing.JPanel panelAccountMenu;
+    private javax.swing.JPanel panelDeviceMenu;
+    private javax.swing.JPanel panelMain;
+    private javax.swing.JPanel panelOptionDevices;
+    private javax.swing.JPanel panelOptionTemplates;
+    private javax.swing.JPanel panelOptionTraps;
+    private javax.swing.JPanel panelOptionsBar;
+    private javax.swing.JPanel panelTemplateMenu;
+    private javax.swing.JSeparator separator1;
+    private javax.swing.JSeparator separator2;
+    private javax.swing.JSeparator separator3;
     // End of variables declaration//GEN-END:variables
 }
