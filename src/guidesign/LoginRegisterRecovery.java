@@ -110,7 +110,7 @@ public class LoginRegisterRecovery extends javax.swing.JFrame {
         labelOpenAccountList = new javax.swing.JLabel();
         pfieldPassword = new javax.swing.JPasswordField();
         tfieldAccount = new javax.swing.JTextField();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        cboxRememberPassword = new javax.swing.JCheckBox();
         labelBackground = new javax.swing.JLabel();
 
         scrollpaneAccountList.setBorder(null);
@@ -415,7 +415,6 @@ public class LoginRegisterRecovery extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SNMP Manager");
         setBackground(new java.awt.Color(0, 0, 0));
-        setPreferredSize(new java.awt.Dimension(1600, 1000));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -476,10 +475,10 @@ public class LoginRegisterRecovery extends javax.swing.JFrame {
         tfieldAccount.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         panelLogin.add(tfieldAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 300, 30));
 
-        jCheckBox1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jCheckBox1.setForeground(new java.awt.Color(236, 46, 20));
-        jCheckBox1.setText("Remember me");
-        panelLogin.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 390, 130, -1));
+        cboxRememberPassword.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        cboxRememberPassword.setForeground(new java.awt.Color(236, 46, 20));
+        cboxRememberPassword.setText("Remember me");
+        panelLogin.add(cboxRememberPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 390, 130, -1));
 
         panelOverlay.add(panelLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 250, 420, 560));
 
@@ -541,8 +540,8 @@ public class LoginRegisterRecovery extends javax.swing.JFrame {
     private javax.swing.JButton buttonLogin;
     private javax.swing.JButton buttonRegister;
     private javax.swing.JButton buttonSubmitAnswers;
+    private javax.swing.JCheckBox cboxRememberPassword;
     private javax.swing.JCheckBox checkboxTerms;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel label1;
     private javax.swing.JLabel label10;
     private javax.swing.JLabel label11;
