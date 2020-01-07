@@ -28,12 +28,14 @@ public class DialogChoosingTemplates extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        labelChoosingTabular = new javax.swing.JLabel();
-        labelChoosingSingular = new javax.swing.JLabel();
         scrollpane1 = new javax.swing.JScrollPane();
         listTemplates = new javax.swing.JList<>();
         buttonCancel = new javax.swing.JButton();
+        buttonTabular = new javax.swing.JButton();
         buttonContinue = new javax.swing.JButton();
+        buttonSingular = new javax.swing.JButton();
+        tfieldSearch = new javax.swing.JTextField();
+        labelIcon1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(java.awt.Color.white);
@@ -41,20 +43,6 @@ public class DialogChoosingTemplates extends javax.swing.JDialog {
         setMinimumSize(new java.awt.Dimension(444, 615));
         setModal(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        labelChoosingTabular.setBackground(new java.awt.Color(66, 245, 156));
-        labelChoosingTabular.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        labelChoosingTabular.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelChoosingTabular.setText("Tabular");
-        labelChoosingTabular.setOpaque(true);
-        getContentPane().add(labelChoosingTabular, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 70, 50));
-
-        labelChoosingSingular.setBackground(new java.awt.Color(66, 135, 245));
-        labelChoosingSingular.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        labelChoosingSingular.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelChoosingSingular.setText("Singular");
-        labelChoosingSingular.setOpaque(true);
-        getContentPane().add(labelChoosingSingular, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 70, 50));
 
         listTemplates.setFont(new java.awt.Font("SansSerif", 0, 15)); // NOI18N
         listTemplates.setModel(new javax.swing.AbstractListModel<String>() {
@@ -64,7 +52,7 @@ public class DialogChoosingTemplates extends javax.swing.JDialog {
         });
         scrollpane1.setViewportView(listTemplates);
 
-        getContentPane().add(scrollpane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 320, 410));
+        getContentPane().add(scrollpane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 320, 380));
 
         buttonCancel.setBackground(new java.awt.Color(66, 108, 245));
         buttonCancel.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
@@ -73,12 +61,32 @@ public class DialogChoosingTemplates extends javax.swing.JDialog {
         buttonCancel.setBorderPainted(false);
         getContentPane().add(buttonCancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 540, 90, -1));
 
+        buttonTabular.setBackground(new java.awt.Color(152, 181, 245));
+        buttonTabular.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        buttonTabular.setForeground(java.awt.Color.white);
+        buttonTabular.setText("Tabular");
+        buttonTabular.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 2, 1, new java.awt.Color(0, 0, 0)));
+        getContentPane().add(buttonTabular, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 80, 30));
+
         buttonContinue.setBackground(new java.awt.Color(66, 108, 245));
         buttonContinue.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         buttonContinue.setForeground(java.awt.Color.white);
         buttonContinue.setText("Continue");
         buttonContinue.setBorderPainted(false);
         getContentPane().add(buttonContinue, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, -1, -1));
+
+        buttonSingular.setBackground(new java.awt.Color(66, 108, 245));
+        buttonSingular.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        buttonSingular.setForeground(java.awt.Color.white);
+        buttonSingular.setText("Singular");
+        buttonSingular.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        getContentPane().add(buttonSingular, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 80, 30));
+
+        tfieldSearch.setFont(new java.awt.Font("SansSerif", 0, 15)); // NOI18N
+        getContentPane().add(tfieldSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 280, 30));
+
+        labelIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_search2_30.png"))); // NOI18N
+        getContentPane().add(labelIcon1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 40, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -128,9 +136,11 @@ public class DialogChoosingTemplates extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonCancel;
     private javax.swing.JButton buttonContinue;
-    private javax.swing.JLabel labelChoosingSingular;
-    private javax.swing.JLabel labelChoosingTabular;
+    private javax.swing.JButton buttonSingular;
+    private javax.swing.JButton buttonTabular;
+    private javax.swing.JLabel labelIcon1;
     private javax.swing.JList<String> listTemplates;
     private javax.swing.JScrollPane scrollpane1;
+    private javax.swing.JTextField tfieldSearch;
     // End of variables declaration//GEN-END:variables
 }

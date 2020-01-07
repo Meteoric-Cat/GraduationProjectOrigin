@@ -27,16 +27,22 @@ public class PanelImportedDevices extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        labelShowDeviceList = new javax.swing.JLabel();
         panelDevices = new javax.swing.JPanel();
         tfieldSearch = new javax.swing.JTextField();
         scrollpane1 = new javax.swing.JScrollPane();
         panelDeviceList = new javax.swing.JPanel();
         labelSearch = new javax.swing.JLabel();
         buttonImport = new javax.swing.JButton();
+        buttonTopology = new javax.swing.JButton();
+        labelHideDeviceList = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1600, 940));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        labelShowDeviceList.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_double_right_arrow_blue_40.png"))); // NOI18N
+        getContentPane().add(labelShowDeviceList, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 340, 40, 190));
 
         panelDevices.setBackground(new java.awt.Color(20, 51, 125));
         panelDevices.setPreferredSize(new java.awt.Dimension(280, 940));
@@ -71,6 +77,18 @@ public class PanelImportedDevices extends javax.swing.JFrame {
         buttonImport.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         buttonImport.setBorderPainted(false);
         panelDevices.add(buttonImport, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 830, 120, 40));
+
+        buttonTopology.setBackground(new java.awt.Color(38, 56, 163));
+        buttonTopology.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        buttonTopology.setForeground(java.awt.Color.white);
+        buttonTopology.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_plus_40.png"))); // NOI18N
+        buttonTopology.setText("Topology");
+        buttonTopology.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttonTopology.setBorderPainted(false);
+        panelDevices.add(buttonTopology, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 830, 150, 40));
+
+        labelHideDeviceList.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_double_left_white_40.png"))); // NOI18N
+        panelDevices.add(labelHideDeviceList, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 330, 30, 190));
 
         getContentPane().add(panelDevices, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, -1));
 
@@ -114,7 +132,10 @@ public class PanelImportedDevices extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonImport;
+    private javax.swing.JButton buttonTopology;
+    private javax.swing.JLabel labelHideDeviceList;
     private javax.swing.JLabel labelSearch;
+    private javax.swing.JLabel labelShowDeviceList;
     private javax.swing.JPanel panelDeviceList;
     private javax.swing.JPanel panelDevices;
     private javax.swing.JScrollPane scrollpane1;

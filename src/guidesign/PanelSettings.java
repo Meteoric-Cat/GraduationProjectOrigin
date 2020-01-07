@@ -107,7 +107,7 @@ public class PanelSettings extends javax.swing.JFrame {
 
         label4.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         label4.setForeground(java.awt.Color.blue);
-        label4.setText("Interface Checking Periods(s)");
+        label4.setText("Interface Checking Period (s)");
         panelOperationSettings.add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, -1, 30));
 
         tfieldInterfacePeriod.setFont(new java.awt.Font("SansSerif", 0, 15)); // NOI18N
@@ -122,7 +122,7 @@ public class PanelSettings extends javax.swing.JFrame {
 
         label5.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         label5.setForeground(java.awt.Color.blue);
-        label5.setText("Monitoring Query  Periods(s)");
+        label5.setText("Monitoring Query  Period (s)");
         panelOperationSettings.add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, -1, 30));
 
         label6.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N

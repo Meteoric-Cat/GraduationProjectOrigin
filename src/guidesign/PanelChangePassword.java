@@ -44,11 +44,11 @@ public class PanelChangePassword extends javax.swing.JFrame {
         pfieldNewPassword = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1600, 940));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelOverlay.setBackground(new Color(0, 0, 0, 150));
         panelOverlay.setPreferredSize(new java.awt.Dimension(1600, 940));
+        panelOverlay.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelChangePassword.setBackground(java.awt.Color.white);
         panelChangePassword.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -128,22 +128,7 @@ public class PanelChangePassword extends javax.swing.JFrame {
         pfieldNewPassword.setOpaque(false);
         panelChangePassword.add(pfieldNewPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 350, 40));
 
-        javax.swing.GroupLayout panelOverlayLayout = new javax.swing.GroupLayout(panelOverlay);
-        panelOverlay.setLayout(panelOverlayLayout);
-        panelOverlayLayout.setHorizontalGroup(
-            panelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelOverlayLayout.createSequentialGroup()
-                .addContainerGap(553, Short.MAX_VALUE)
-                .addComponent(panelChangePassword, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(533, 533, 533))
-        );
-        panelOverlayLayout.setVerticalGroup(
-            panelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelOverlayLayout.createSequentialGroup()
-                .addContainerGap(159, Short.MAX_VALUE)
-                .addComponent(panelChangePassword, javax.swing.GroupLayout.PREFERRED_SIZE, 626, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(155, 155, 155))
-        );
+        panelOverlay.add(panelChangePassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 159, 514, 626));
 
         getContentPane().add(panelOverlay, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 

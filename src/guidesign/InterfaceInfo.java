@@ -44,7 +44,9 @@ public class InterfaceInfo extends javax.swing.JFrame {
         label17 = new javax.swing.JLabel();
         label18 = new javax.swing.JLabel();
         labelCurrentBandwidth = new javax.swing.JLabel();
-        panelSeparator1 = new javax.swing.JPanel();
+        separator1 = new javax.swing.JSeparator();
+        separator2 = new javax.swing.JSeparator();
+        separator3 = new javax.swing.JSeparator();
         panelBasicInformation = new javax.swing.JPanel();
         label1 = new javax.swing.JLabel();
         labelName = new javax.swing.JLabel();
@@ -58,13 +60,23 @@ public class InterfaceInfo extends javax.swing.JFrame {
         label5 = new javax.swing.JLabel();
         labelNextNodeIpAddress = new javax.swing.JLabel();
         label6 = new javax.swing.JLabel();
-        labelNextNodeMaxAddress = new javax.swing.JLabel();
+        labelNextNodeMacAddress = new javax.swing.JLabel();
+        label8 = new javax.swing.JLabel();
+        labelNextNodeLabel = new javax.swing.JLabel();
+        label9 = new javax.swing.JLabel();
+        labelNextNodeName = new javax.swing.JLabel();
+        label7 = new javax.swing.JLabel();
+        labelMacAddress = new javax.swing.JLabel();
         label23 = new javax.swing.JLabel();
         tfieldUpdatePeriod = new javax.swing.JTextField();
         buttonStart = new javax.swing.JButton();
         buttonCancel = new javax.swing.JButton();
+        label20 = new javax.swing.JLabel();
+        labelUpdatedTime = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1160, 940));
+        setMinimumSize(new java.awt.Dimension(1160, 940));
         setPreferredSize(new java.awt.Dimension(1160, 940));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -73,28 +85,28 @@ public class InterfaceInfo extends javax.swing.JFrame {
         panelAdditionalInformation.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         label11.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        label11.setText("Inbound Packet Amount:");
+        label11.setText("Number Of Inbound Packets:");
         panelAdditionalInformation.add(label11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, -1, 30));
 
         labelInPackAmount.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         labelInPackAmount.setText(". . .");
-        panelAdditionalInformation.add(labelInPackAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 280, 90, 30));
+        panelAdditionalInformation.add(labelInPackAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 280, 90, 30));
 
         label12.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        label12.setText("Outbound Packet Amount:");
+        label12.setText("Number Of Outbound Packets:");
         panelAdditionalInformation.add(label12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, -1, 30));
 
         labelOutPackAmount.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         labelOutPackAmount.setText(". . .");
-        panelAdditionalInformation.add(labelOutPackAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 340, 90, 30));
+        panelAdditionalInformation.add(labelOutPackAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 340, 90, 30));
 
         label13.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        label13.setText("Inbound Bytes");
+        label13.setText("Inbound Bytes:");
         panelAdditionalInformation.add(label13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, 30));
 
         labelInboundBytes.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         labelInboundBytes.setText(". . .");
-        panelAdditionalInformation.add(labelInboundBytes, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, 90, 30));
+        panelAdditionalInformation.add(labelInboundBytes, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 400, 90, 30));
 
         label14.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         label14.setText("Outbound Bytes");
@@ -102,57 +114,44 @@ public class InterfaceInfo extends javax.swing.JFrame {
 
         labelOutboundBytes.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         labelOutboundBytes.setText(". . .");
-        panelAdditionalInformation.add(labelOutboundBytes, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 460, 90, 30));
+        panelAdditionalInformation.add(labelOutboundBytes, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 460, 90, 30));
 
         label15.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        label15.setText("Inbound Error Packet Count:");
+        label15.setText("Number Of Inbound Discard Packets:");
         panelAdditionalInformation.add(label15, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, -1, 30));
 
         labelInErrPackCount.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         labelInErrPackCount.setText(". . .");
-        panelAdditionalInformation.add(labelInErrPackCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 520, 90, 30));
+        panelAdditionalInformation.add(labelInErrPackCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 520, 90, 30));
 
         label16.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        label16.setText("Outbound Error Packet Count:");
+        label16.setText("Number Of Outbound Discard Packets:");
         panelAdditionalInformation.add(label16, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 580, -1, 30));
 
         labelOutErrPackCount.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         labelOutErrPackCount.setText(". . .");
-        panelAdditionalInformation.add(labelOutErrPackCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 580, 90, 30));
+        panelAdditionalInformation.add(labelOutErrPackCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 580, 90, 30));
 
         labelMTU.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         labelMTU.setText(". . .");
-        panelAdditionalInformation.add(labelMTU, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 50, 90, 30));
+        panelAdditionalInformation.add(labelMTU, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 50, 90, 30));
 
         label17.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         label17.setText("MTU:");
         panelAdditionalInformation.add(label17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, 30));
 
         label18.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        label18.setText("Current Bandwidth:");
+        label18.setText("Bandwidth:");
         panelAdditionalInformation.add(label18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, 30));
 
         labelCurrentBandwidth.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         labelCurrentBandwidth.setText(". . .");
-        panelAdditionalInformation.add(labelCurrentBandwidth, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 110, 90, 30));
+        panelAdditionalInformation.add(labelCurrentBandwidth, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 90, 30));
+        panelAdditionalInformation.add(separator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 520, 10));
+        panelAdditionalInformation.add(separator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 520, 10));
+        panelAdditionalInformation.add(separator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 520, 10));
 
-        panelSeparator1.setBackground(java.awt.Color.black);
-        panelSeparator1.setPreferredSize(new java.awt.Dimension(440, 5));
-
-        javax.swing.GroupLayout panelSeparator1Layout = new javax.swing.GroupLayout(panelSeparator1);
-        panelSeparator1.setLayout(panelSeparator1Layout);
-        panelSeparator1Layout.setHorizontalGroup(
-            panelSeparator1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 440, Short.MAX_VALUE)
-        );
-        panelSeparator1Layout.setVerticalGroup(
-            panelSeparator1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 5, Short.MAX_VALUE)
-        );
-
-        panelAdditionalInformation.add(panelSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 440, 5));
-
-        getContentPane().add(panelAdditionalInformation, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, 500, 730));
+        getContentPane().add(panelAdditionalInformation, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, 520, 730));
 
         panelBasicInformation.setBackground(java.awt.Color.white);
         panelBasicInformation.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Basic Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SansSerif", 1, 14))); // NOI18N
@@ -164,31 +163,31 @@ public class InterfaceInfo extends javax.swing.JFrame {
 
         labelName.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         labelName.setText(". . .");
-        panelBasicInformation.add(labelName, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, 210, 30));
+        panelBasicInformation.add(labelName, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, 240, 30));
 
         label3.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         label3.setText("IP Address:");
-        panelBasicInformation.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, 30));
+        panelBasicInformation.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, 30));
 
         labelIPAddress.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         labelIPAddress.setText(". . .");
-        panelBasicInformation.add(labelIPAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 210, 30));
+        panelBasicInformation.add(labelIPAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 240, 30));
 
         label4.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         label4.setText("Netmask:");
-        panelBasicInformation.add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, -1, 30));
+        panelBasicInformation.add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, -1, 30));
 
         labelNetmask.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         labelNetmask.setText(". . .");
-        panelBasicInformation.add(labelNetmask, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, 210, 30));
+        panelBasicInformation.add(labelNetmask, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, 240, 30));
 
         label2.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         label2.setText("Type:");
-        panelBasicInformation.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, -1, 30));
+        panelBasicInformation.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, 30));
 
         labelType.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         labelType.setText(". . .");
-        panelBasicInformation.add(labelType, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, 210, 30));
+        panelBasicInformation.add(labelType, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 240, 30));
 
         panelConnectedNode.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Connected Node", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SansSerif", 1, 14))); // NOI18N
         panelConnectedNode.setOpaque(false);
@@ -196,23 +195,47 @@ public class InterfaceInfo extends javax.swing.JFrame {
 
         label5.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         label5.setText("IP Address:");
-        panelConnectedNode.add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, 30));
+        panelConnectedNode.add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, 30));
 
         labelNextNodeIpAddress.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         labelNextNodeIpAddress.setText(". . .");
-        panelConnectedNode.add(labelNextNodeIpAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 210, 30));
+        panelConnectedNode.add(labelNextNodeIpAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 240, 30));
 
         label6.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         label6.setText("MAC Address:");
-        panelConnectedNode.add(label6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, -1, 30));
+        panelConnectedNode.add(label6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, -1, 30));
 
-        labelNextNodeMaxAddress.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
-        labelNextNodeMaxAddress.setText(". . .");
-        panelConnectedNode.add(labelNextNodeMaxAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 210, 30));
+        labelNextNodeMacAddress.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
+        labelNextNodeMacAddress.setText(". . .");
+        panelConnectedNode.add(labelNextNodeMacAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, 240, 30));
 
-        panelBasicInformation.add(panelConnectedNode, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 440, 410));
+        label8.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
+        label8.setText("Label:");
+        panelConnectedNode.add(label8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, -1, 30));
 
-        getContentPane().add(panelBasicInformation, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 440, 730));
+        labelNextNodeLabel.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
+        labelNextNodeLabel.setText(". . .");
+        panelConnectedNode.add(labelNextNodeLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, 240, 30));
+
+        label9.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
+        label9.setText("Name:");
+        panelConnectedNode.add(label9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, 30));
+
+        labelNextNodeName.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
+        labelNextNodeName.setText(". . .");
+        panelConnectedNode.add(labelNextNodeName, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, 240, 30));
+
+        panelBasicInformation.add(panelConnectedNode, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 380, 460, 350));
+
+        label7.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
+        label7.setText("MAC Address:");
+        panelBasicInformation.add(label7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, -1, 30));
+
+        labelMacAddress.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
+        labelMacAddress.setText(". . .");
+        panelBasicInformation.add(labelMacAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 240, 30));
+
+        getContentPane().add(panelBasicInformation, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 460, 730));
 
         label23.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         label23.setText("Update Period(s):");
@@ -238,6 +261,14 @@ public class InterfaceInfo extends javax.swing.JFrame {
         buttonCancel.setText("Stop");
         buttonCancel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(buttonCancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 840, 70, 30));
+
+        label20.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
+        label20.setText("Updated Time:");
+        getContentPane().add(label20, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 830, -1, 30));
+
+        labelUpdatedTime.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
+        labelUpdatedTime.setText(". . .");
+        getContentPane().add(labelUpdatedTime, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 830, 310, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -290,29 +321,39 @@ public class InterfaceInfo extends javax.swing.JFrame {
     private javax.swing.JLabel label17;
     private javax.swing.JLabel label18;
     private javax.swing.JLabel label2;
+    private javax.swing.JLabel label20;
     private javax.swing.JLabel label23;
     private javax.swing.JLabel label3;
     private javax.swing.JLabel label4;
     private javax.swing.JLabel label5;
     private javax.swing.JLabel label6;
+    private javax.swing.JLabel label7;
+    private javax.swing.JLabel label8;
+    private javax.swing.JLabel label9;
     private javax.swing.JLabel labelCurrentBandwidth;
     private javax.swing.JLabel labelIPAddress;
     private javax.swing.JLabel labelInErrPackCount;
     private javax.swing.JLabel labelInPackAmount;
     private javax.swing.JLabel labelInboundBytes;
     private javax.swing.JLabel labelMTU;
+    private javax.swing.JLabel labelMacAddress;
     private javax.swing.JLabel labelName;
     private javax.swing.JLabel labelNetmask;
     private javax.swing.JLabel labelNextNodeIpAddress;
-    private javax.swing.JLabel labelNextNodeMaxAddress;
+    private javax.swing.JLabel labelNextNodeLabel;
+    private javax.swing.JLabel labelNextNodeMacAddress;
+    private javax.swing.JLabel labelNextNodeName;
     private javax.swing.JLabel labelOutErrPackCount;
     private javax.swing.JLabel labelOutPackAmount;
     private javax.swing.JLabel labelOutboundBytes;
     private javax.swing.JLabel labelType;
+    private javax.swing.JLabel labelUpdatedTime;
     private javax.swing.JPanel panelAdditionalInformation;
     private javax.swing.JPanel panelBasicInformation;
     private javax.swing.JPanel panelConnectedNode;
-    private javax.swing.JPanel panelSeparator1;
+    private javax.swing.JSeparator separator1;
+    private javax.swing.JSeparator separator2;
+    private javax.swing.JSeparator separator3;
     private javax.swing.JTextField tfieldUpdatePeriod;
     // End of variables declaration//GEN-END:variables
 }

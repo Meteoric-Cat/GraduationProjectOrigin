@@ -38,9 +38,18 @@ public class PanelMonitoringDevices extends javax.swing.JFrame {
         label4 = new javax.swing.JLabel();
         scrollpane1 = new javax.swing.JScrollPane();
         tableItems = new javax.swing.JTable();
+        label5 = new javax.swing.JLabel();
+        tfieldUpdatePeriod = new javax.swing.JTextField();
+        buttonStart = new javax.swing.JButton();
+        buttonStop = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(java.awt.Color.white);
+        setMaximumSize(new java.awt.Dimension(1160, 940));
+        setMinimumSize(new java.awt.Dimension(1160, 940));
+        setPreferredSize(new java.awt.Dimension(1160, 940));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -51,6 +60,7 @@ public class PanelMonitoringDevices extends javax.swing.JFrame {
         label1.setText("Template Name:");
         panelTemplateInfo.add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, -1, 40));
 
+        tfieldTemplateName.setEditable(false);
         tfieldTemplateName.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         tfieldTemplateName.setText(". . .");
         tfieldTemplateName.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
@@ -66,6 +76,7 @@ public class PanelMonitoringDevices extends javax.swing.JFrame {
         label2.setText("Device Name:");
         panelTemplateInfo.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, -1, 40));
 
+        tfieldDeviceName.setEditable(false);
         tfieldDeviceName.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         tfieldDeviceName.setText(". . .");
         tfieldDeviceName.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
@@ -99,6 +110,33 @@ public class PanelMonitoringDevices extends javax.swing.JFrame {
         scrollpane1.setViewportView(tableItems);
 
         getContentPane().add(scrollpane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, 950, 540));
+
+        label5.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        label5.setText("Update Period (s):");
+        getContentPane().add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 860, -1, 30));
+
+        tfieldUpdatePeriod.setFont(new java.awt.Font("SansSerif", 0, 15)); // NOI18N
+        tfieldUpdatePeriod.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        tfieldUpdatePeriod.setText("0");
+        getContentPane().add(tfieldUpdatePeriod, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 860, 90, 30));
+
+        buttonStart.setBackground(new java.awt.Color(73, 125, 222));
+        buttonStart.setForeground(java.awt.Color.white);
+        buttonStart.setText("Start");
+        getContentPane().add(buttonStart, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 860, 70, -1));
+
+        buttonStop.setBackground(new java.awt.Color(73, 125, 222));
+        buttonStop.setForeground(java.awt.Color.white);
+        buttonStop.setText("Stop");
+        getContentPane().add(buttonStop, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 860, 70, -1));
+
+        jLabel1.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        jLabel1.setText("Updated Time:");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 858, 140, 30));
+
+        jLabel2.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        jLabel2.setText(". . .");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 858, 180, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -154,13 +192,19 @@ public class PanelMonitoringDevices extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton buttonStart;
+    private javax.swing.JButton buttonStop;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel label1;
     private javax.swing.JLabel label2;
     private javax.swing.JLabel label4;
+    private javax.swing.JLabel label5;
     private javax.swing.JPanel panelTemplateInfo;
     private javax.swing.JScrollPane scrollpane1;
     private javax.swing.JTable tableItems;
     private javax.swing.JTextField tfieldDeviceName;
     private javax.swing.JTextField tfieldTemplateName;
+    private javax.swing.JTextField tfieldUpdatePeriod;
     // End of variables declaration//GEN-END:variables
 }

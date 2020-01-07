@@ -39,15 +39,23 @@ public class DeviceInfo extends javax.swing.JFrame {
         cboxType = new javax.swing.JComboBox<>();
         label5 = new javax.swing.JLabel();
         labelLastAccess = new javax.swing.JLabel();
+        label6 = new javax.swing.JLabel();
+        tfieldLabel = new javax.swing.JTextField();
         panelSNMPInfo = new javax.swing.JPanel();
         label8 = new javax.swing.JLabel();
         label9 = new javax.swing.JLabel();
         tfieldCommunity = new javax.swing.JTextField();
         cboxSNMPVersion = new javax.swing.JComboBox<>();
-        buttonTrap = new javax.swing.JButton();
+        label10 = new javax.swing.JLabel();
+        tfieldPort = new javax.swing.JTextField();
+        label11 = new javax.swing.JLabel();
+        tfieldAddress = new javax.swing.JTextField();
+        buttonSummary = new javax.swing.JButton();
         buttonCancel = new javax.swing.JButton();
         buttonSave = new javax.swing.JButton();
-        buttonMonitor = new javax.swing.JButton();
+        buttonResources = new javax.swing.JButton();
+        buttonAdvance = new javax.swing.JButton();
+        labelHidePanel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1160, 940));
@@ -67,19 +75,22 @@ public class DeviceInfo extends javax.swing.JFrame {
 
         label2.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         label2.setText("Type:");
-        panelBasicInfo.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, -1, 30));
+        panelBasicInfo.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, -1, 30));
 
         label3.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         label3.setText("Location:");
-        panelBasicInfo.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, -1, 30));
+        panelBasicInfo.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, -1, 30));
 
         tfieldLocation.setBackground(java.awt.Color.white);
         tfieldLocation.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        panelBasicInfo.add(tfieldLocation, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 350, 30));
+        panelBasicInfo.add(tfieldLocation, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 350, 30));
 
         label4.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         label4.setText("Description:");
-        panelBasicInfo.add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 230, -1, 30));
+        panelBasicInfo.add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 280, -1, 30));
+
+        scrollpane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        scrollpane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         tareaDescription.setBackground(java.awt.Color.white);
         tareaDescription.setColumns(20);
@@ -87,22 +98,30 @@ public class DeviceInfo extends javax.swing.JFrame {
         tareaDescription.setRows(5);
         scrollpane1.setViewportView(tareaDescription);
 
-        panelBasicInfo.add(scrollpane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, 350, 120));
+        panelBasicInfo.add(scrollpane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 280, 350, 120));
 
         cboxType.setBackground(java.awt.Color.white);
         cboxType.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         cboxType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        panelBasicInfo.add(cboxType, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 180, -1));
+        panelBasicInfo.add(cboxType, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, 180, -1));
 
         label5.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         label5.setText("Last Access:");
-        panelBasicInfo.add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 380, -1, 30));
+        panelBasicInfo.add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, -1, 30));
 
         labelLastAccess.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         labelLastAccess.setText(". . .");
-        panelBasicInfo.add(labelLastAccess, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 380, 350, 30));
+        panelBasicInfo.add(labelLastAccess, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 430, 350, 30));
 
-        getContentPane().add(panelBasicInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 920, 460));
+        label6.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        label6.setText("Label:");
+        panelBasicInfo.add(label6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, -1, 30));
+
+        tfieldLabel.setBackground(java.awt.Color.white);
+        tfieldLabel.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        panelBasicInfo.add(tfieldLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, 350, 30));
+
+        getContentPane().add(panelBasicInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 920, 500));
 
         panelSNMPInfo.setBackground(java.awt.Color.white);
         panelSNMPInfo.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "SNMP Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SansSerif", 1, 14))); // NOI18N
@@ -110,30 +129,48 @@ public class DeviceInfo extends javax.swing.JFrame {
 
         label8.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         label8.setText("SNMP Version:");
-        panelSNMPInfo.add(label8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, -1, 30));
+        panelSNMPInfo.add(label8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, -1, 30));
 
         label9.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         label9.setText("Community:");
-        panelSNMPInfo.add(label9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, -1, 30));
+        panelSNMPInfo.add(label9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, -1, 30));
 
         tfieldCommunity.setBackground(java.awt.Color.white);
         tfieldCommunity.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        panelSNMPInfo.add(tfieldCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 350, 30));
+        panelSNMPInfo.add(tfieldCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 140, 350, 30));
 
         cboxSNMPVersion.setBackground(java.awt.Color.white);
         cboxSNMPVersion.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         cboxSNMPVersion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        panelSNMPInfo.add(cboxSNMPVersion, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, 180, -1));
+        panelSNMPInfo.add(cboxSNMPVersion, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 40, 180, -1));
 
-        getContentPane().add(panelSNMPInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 550, 920, 220));
+        label10.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        label10.setText("Port:");
+        panelSNMPInfo.add(label10, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 90, -1, 30));
 
-        buttonTrap.setBackground(new java.awt.Color(207, 62, 69));
-        buttonTrap.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
-        buttonTrap.setForeground(java.awt.Color.white);
-        buttonTrap.setText("Trap");
-        buttonTrap.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        buttonTrap.setOpaque(true);
-        getContentPane().add(buttonTrap, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 810, 100, 40));
+        tfieldPort.setBackground(java.awt.Color.white);
+        tfieldPort.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        tfieldPort.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        tfieldPort.setText("161");
+        panelSNMPInfo.add(tfieldPort, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 90, 70, 30));
+
+        label11.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        label11.setText("IP Address:");
+        panelSNMPInfo.add(label11, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, -1, 30));
+
+        tfieldAddress.setBackground(java.awt.Color.white);
+        tfieldAddress.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        panelSNMPInfo.add(tfieldAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 350, 30));
+
+        getContentPane().add(panelSNMPInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 590, 920, 210));
+
+        buttonSummary.setBackground(new java.awt.Color(207, 62, 69));
+        buttonSummary.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        buttonSummary.setForeground(java.awt.Color.white);
+        buttonSummary.setText("Summary");
+        buttonSummary.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttonSummary.setOpaque(true);
+        getContentPane().add(buttonSummary, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 830, 100, 40));
 
         buttonCancel.setBackground(new java.awt.Color(38, 56, 163));
         buttonCancel.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
@@ -141,7 +178,7 @@ public class DeviceInfo extends javax.swing.JFrame {
         buttonCancel.setText("Cancel");
         buttonCancel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         buttonCancel.setOpaque(true);
-        getContentPane().add(buttonCancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 810, 90, 40));
+        getContentPane().add(buttonCancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 830, 90, 40));
 
         buttonSave.setBackground(new java.awt.Color(38, 56, 163));
         buttonSave.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
@@ -149,15 +186,26 @@ public class DeviceInfo extends javax.swing.JFrame {
         buttonSave.setText("Save");
         buttonSave.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         buttonSave.setOpaque(true);
-        getContentPane().add(buttonSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 810, 100, 40));
+        getContentPane().add(buttonSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 830, 100, 40));
 
-        buttonMonitor.setBackground(new java.awt.Color(207, 62, 69));
-        buttonMonitor.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
-        buttonMonitor.setForeground(java.awt.Color.white);
-        buttonMonitor.setText("Monitor");
-        buttonMonitor.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        buttonMonitor.setOpaque(true);
-        getContentPane().add(buttonMonitor, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 810, 100, 40));
+        buttonResources.setBackground(new java.awt.Color(207, 62, 69));
+        buttonResources.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        buttonResources.setForeground(java.awt.Color.white);
+        buttonResources.setText("Resources");
+        buttonResources.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttonResources.setOpaque(true);
+        getContentPane().add(buttonResources, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 830, 100, 40));
+
+        buttonAdvance.setBackground(new java.awt.Color(207, 62, 69));
+        buttonAdvance.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        buttonAdvance.setForeground(java.awt.Color.white);
+        buttonAdvance.setText("Advance");
+        buttonAdvance.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttonAdvance.setOpaque(true);
+        getContentPane().add(buttonAdvance, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 830, 100, 40));
+
+        labelHidePanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_double_right_40.png"))); // NOI18N
+        getContentPane().add(labelHidePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, -1, 180));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -198,26 +246,34 @@ public class DeviceInfo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton buttonAdvance;
     private javax.swing.JButton buttonCancel;
-    private javax.swing.JButton buttonMonitor;
+    private javax.swing.JButton buttonResources;
     private javax.swing.JButton buttonSave;
-    private javax.swing.JButton buttonTrap;
+    private javax.swing.JButton buttonSummary;
     private javax.swing.JComboBox<String> cboxSNMPVersion;
     private javax.swing.JComboBox<String> cboxType;
     private javax.swing.JLabel label1;
+    private javax.swing.JLabel label10;
+    private javax.swing.JLabel label11;
     private javax.swing.JLabel label2;
     private javax.swing.JLabel label3;
     private javax.swing.JLabel label4;
     private javax.swing.JLabel label5;
+    private javax.swing.JLabel label6;
     private javax.swing.JLabel label8;
     private javax.swing.JLabel label9;
+    private javax.swing.JLabel labelHidePanel;
     private javax.swing.JLabel labelLastAccess;
     private javax.swing.JPanel panelBasicInfo;
     private javax.swing.JPanel panelSNMPInfo;
     private javax.swing.JScrollPane scrollpane1;
     private javax.swing.JTextArea tareaDescription;
+    private javax.swing.JTextField tfieldAddress;
     private javax.swing.JTextField tfieldCommunity;
+    private javax.swing.JTextField tfieldLabel;
     private javax.swing.JTextField tfieldLocation;
     private javax.swing.JTextField tfieldName;
+    private javax.swing.JTextField tfieldPort;
     // End of variables declaration//GEN-END:variables
 }

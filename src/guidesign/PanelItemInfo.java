@@ -49,7 +49,6 @@ public class PanelItemInfo extends javax.swing.JFrame {
         labelOID = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1160, 940));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelOverlay.setBackground(new Color(0, 0, 0, 150));
@@ -128,7 +127,7 @@ public class PanelItemInfo extends javax.swing.JFrame {
         labelOID.setText(". . .");
         panelItemInfo.add(labelOID, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 220, 320, 30));
 
-        panelOverlay.add(panelItemInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 710, 680));
+        panelOverlay.add(panelItemInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, 710, 680));
 
         getContentPane().add(panelOverlay, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 

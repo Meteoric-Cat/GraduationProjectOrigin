@@ -34,9 +34,10 @@ public class PanelDisplayTemplates extends javax.swing.JFrame {
         label1 = new javax.swing.JLabel();
         tfieldTemplateName = new javax.swing.JTextField();
         label2 = new javax.swing.JLabel();
-        tfieldTemplateDescription = new javax.swing.JTextField();
-        tfieldImportedTime = new javax.swing.JTextField();
         label3 = new javax.swing.JLabel();
+        labelImportedTime = new javax.swing.JLabel();
+        scrollPane1 = new javax.swing.JScrollPane();
+        tareaDescription = new javax.swing.JTextArea();
         label4 = new javax.swing.JLabel();
         scrollpane1 = new javax.swing.JScrollPane();
         tableItems = new javax.swing.JTable();
@@ -49,55 +50,48 @@ public class PanelDisplayTemplates extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelTemplateInfo.setBackground(new java.awt.Color(73, 125, 222));
+        panelTemplateInfo.setBackground(new java.awt.Color(140, 198, 237));
         panelTemplateInfo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         label1.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         label1.setText("Template Name:");
-        panelTemplateInfo.add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, -1, 40));
+        panelTemplateInfo.add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 40, -1, 40));
 
-        tfieldTemplateName.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        tfieldTemplateName.setFont(new java.awt.Font("SansSerif", 0, 15)); // NOI18N
         tfieldTemplateName.setText(". . .");
-        tfieldTemplateName.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
-        tfieldTemplateName.setOpaque(false);
+        tfieldTemplateName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tfieldTemplateName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tfieldTemplateNameActionPerformed(evt);
             }
         });
-        panelTemplateInfo.add(tfieldTemplateName, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, 330, 40));
+        panelTemplateInfo.add(tfieldTemplateName, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, 420, 40));
 
         label2.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         label2.setText("Template Description:");
-        panelTemplateInfo.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, -1, 40));
-
-        tfieldTemplateDescription.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
-        tfieldTemplateDescription.setText(". . .");
-        tfieldTemplateDescription.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
-        tfieldTemplateDescription.setOpaque(false);
-        tfieldTemplateDescription.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tfieldTemplateDescriptionActionPerformed(evt);
-            }
-        });
-        panelTemplateInfo.add(tfieldTemplateDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 110, 330, 40));
-
-        tfieldImportedTime.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
-        tfieldImportedTime.setText(". . .");
-        tfieldImportedTime.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
-        tfieldImportedTime.setOpaque(false);
-        tfieldImportedTime.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tfieldImportedTimeActionPerformed(evt);
-            }
-        });
-        panelTemplateInfo.add(tfieldImportedTime, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 170, 330, 40));
+        panelTemplateInfo.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 100, -1, 40));
 
         label3.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         label3.setText("Imported Time:");
-        panelTemplateInfo.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, -1, 40));
+        panelTemplateInfo.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, -1, 40));
 
-        getContentPane().add(panelTemplateInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1160, 260));
+        labelImportedTime.setFont(new java.awt.Font("SansSerif", 0, 15)); // NOI18N
+        labelImportedTime.setText(". . .");
+        panelTemplateInfo.add(labelImportedTime, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 420, 40));
+
+        scrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        scrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        tareaDescription.setColumns(20);
+        tareaDescription.setFont(new java.awt.Font("SansSerif", 0, 15)); // NOI18N
+        tareaDescription.setLineWrap(true);
+        tareaDescription.setRows(4);
+        tareaDescription.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        scrollPane1.setViewportView(tareaDescription);
+
+        panelTemplateInfo.add(scrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 100, 420, 90));
+
+        getContentPane().add(panelTemplateInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1160, 280));
 
         label4.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         label4.setText("Items:");
@@ -115,7 +109,15 @@ public class PanelDisplayTemplates extends javax.swing.JFrame {
             new String [] {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
-        ));
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Boolean.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
         scrollpane1.setViewportView(tableItems);
 
         getContentPane().add(scrollpane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 950, 480));
@@ -142,14 +144,6 @@ public class PanelDisplayTemplates extends javax.swing.JFrame {
     private void tfieldTemplateNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfieldTemplateNameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfieldTemplateNameActionPerformed
-
-    private void tfieldTemplateDescriptionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfieldTemplateDescriptionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tfieldTemplateDescriptionActionPerformed
-
-    private void tfieldImportedTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfieldImportedTimeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tfieldImportedTimeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -193,11 +187,12 @@ public class PanelDisplayTemplates extends javax.swing.JFrame {
     private javax.swing.JLabel label2;
     private javax.swing.JLabel label3;
     private javax.swing.JLabel label4;
+    private javax.swing.JLabel labelImportedTime;
     private javax.swing.JPanel panelTemplateInfo;
+    private javax.swing.JScrollPane scrollPane1;
     private javax.swing.JScrollPane scrollpane1;
     private javax.swing.JTable tableItems;
-    private javax.swing.JTextField tfieldImportedTime;
-    private javax.swing.JTextField tfieldTemplateDescription;
+    private javax.swing.JTextArea tareaDescription;
     private javax.swing.JTextField tfieldTemplateName;
     // End of variables declaration//GEN-END:variables
 }
